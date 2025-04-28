@@ -7,12 +7,17 @@ metadata:
 data:
   cwagentconfig.json: |
     {
+      "agent": {
+        "region": "{{ .Values.clusterRegion }}"
+      },
       "logs": {
         "metrics_collected": {
           "kubernetes": {
             "cluster_name": "{{ .Values.clusterName }}",
             "enhanced_container_insights": {{ .Values.enhancedContainerInsights.enabled }},
-            "metrics_collection_interval": 60
+            "tag_service": {{ .Values.tagService }},
+            "disable_metric_extraction": {{ .Values.disableMetricExtraction }},
+            "metrics_collection_interval": {{ .Values.collectionInterval }}
           }
         },
         "force_flush_interval": 5
