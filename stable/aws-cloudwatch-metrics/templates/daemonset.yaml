@@ -23,7 +23,7 @@ spec:
         # Please don't change below envs
         env:
         - name: RUN_WITH_IRSA
-          value: '{{ .Values.runWithIRSA }}'
+          value: {{ .Values.runWithIRSA }}
         - name: HOST_IP
           valueFrom:
             fieldRef:
