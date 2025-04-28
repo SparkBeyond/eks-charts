@@ -3,11 +3,11 @@ entries:
   aws-cloudwatch-metrics:
   - apiVersion: v1
     appVersion: 1.300032.2b361
-    created: "2025-04-28T19:41:06.218744859+03:00"
+    created: "2025-04-28T19:46:52.131594725+03:00"
     description: A Helm chart to deploy aws-cloudwatch-metrics project
-    digest: c95dacb0312ca21b53a3c8ec63be1e000c80f06c778abeb7b776e7b6421c885b
-    home: https://github.com/aws/eks-charts
-    icon: https://raw.githubusercontent.com/aws/eks-charts/master/docs/logo/aws.png
+    digest: 0eab5b2cd7c8a96ca6e9d76a4fe47a0a898b4d69f3e7ac22f9f02d3a859cf292
+    home: https://github.com/sparkbeyond/eks-charts
+    icon: https://raw.githubusercontent.com/sparkbeyond/eks-charts/master/docs/logo/aws.png
     keywords:
     - eks
     - cloudwatch
@@ -15,8 +15,8 @@ entries:
     - containerinsights
     name: aws-cloudwatch-metrics
     sources:
-    - https://github.com/aws/eks-charts
+    - https://github.com/sparkbeyond/eks-charts
     urls:
     - aws-cloudwatch-metrics-0.0.11.tgz
     version: 0.0.11
-generated: "2025-04-28T19:41:06.217683601+03:00"
+generated: "2025-04-28T19:46:52.131175998+03:00"
