@@ -30,7 +30,7 @@ serviceAccount:
 
 hostNetwork: false
 
-runWithIRSA: "False"
+runWithIRSA: false
 
 nodeSelector: {}
 
