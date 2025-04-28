@@ -15,7 +15,7 @@ data:
           "kubernetes": {
             "cluster_name": "{{ .Values.clusterName }}",
             "enhanced_container_insights": {{ .Values.enhancedContainerInsights.enabled }},
-            "tag_service": {{ .Values.config.tagService }},
+            "tag_service": {{ .Values.tagService }},
             "disable_metric_extraction": {{ .Values.disableMetricExtraction }},
             "metrics_collection_interval": {{ .Values.collectionInterval }}
           }

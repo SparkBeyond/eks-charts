@@ -3,15 +3,16 @@ image:
   tag: 1.300032.2b361
   pullPolicy: IfNotPresent
 
-clusterName: cluster_name
-clusterRegion: ""
+clusterName: "kaas-staging"
+clusterRegion: "eu-west-1"
 
 enhancedContainerInsights:
   enabled: true
 
 disableMetricExtraction: false
 
-collectionInterval: 60
+collectionInterval: 120
+tagService: false
 
 resources:
   limits:
@@ -23,6 +24,8 @@ resources:
 
 serviceAccount:
   create: true
+#  annotations:
+#    eks.amazonaws.com/role-arn: arn:aws:iam::11111:role/***
   name:
 
 hostNetwork: false
@@ -31,7 +34,9 @@ runWithIRSA: false
 
 nodeSelector: {}
 
-tolerations: []
+tolerations:
+  - key:
+    operator: Exists
 
 affinity: {}
 

@@ -20,3 +20,4 @@ build/
 .idea
 *.iml
 charts/
+test-values.yaml
