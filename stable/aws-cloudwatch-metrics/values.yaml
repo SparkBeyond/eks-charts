@@ -4,9 +4,14 @@ image:
   pullPolicy: IfNotPresent
 
 clusterName: cluster_name
+clusterRegion: ""
 
 enhancedContainerInsights:
   enabled: true
+
+disableMetricExtraction: false
+
+collectionInterval: 60
 
 resources:
   limits:
@@ -21,6 +26,8 @@ serviceAccount:
   name:
 
 hostNetwork: false
+
+runWithIRSA: false
 
 nodeSelector: {}
 

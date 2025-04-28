@@ -22,6 +22,8 @@ spec:
         {{- include "aws-cloudwatch-metrics.statsdConfig" . | nindent 8 -}}
         # Please don't change below envs
         env:
+        - name: RUN_WITH_IRSA
+          value: {{ .Values.runWithRSA }}
         - name: HOST_IP
           valueFrom:
             fieldRef:
