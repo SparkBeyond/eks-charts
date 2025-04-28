@@ -3,15 +3,15 @@ image:
   tag: 1.300032.2b361
   pullPolicy: IfNotPresent
 
-clusterName: "kaas-staging"
-clusterRegion: "eu-west-1"
+clusterName: ""
+clusterRegion: ""
 
 enhancedContainerInsights:
   enabled: true
 
 disableMetricExtraction: false
 
-collectionInterval: 120
+collectionInterval: 60
 tagService: false
 
 resources:
